@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  好梦学车
+//
+//  Created by haomeng on 2017/4/26.
+//  Copyright © 2017年 haomeng. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+//define this constant if you want to use Masonry without the 'mas_' prefix
+#define MAS_SHORTHAND
+
+//define this constant if you want to enable auto-boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+
+//#import "Masonry.h"
+#import "UIDesign.h"
+#import "NSDictionary+CustomDicHander.h"
+#import "NSDictionary+objectForKeyWitnNoNsnull.h"
+
+#endif

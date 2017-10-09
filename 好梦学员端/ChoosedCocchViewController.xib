@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoosedCocchViewController">
+            <connections>
+                <outlet property="tableView" destination="GFo-gj-fLg" id="gMI-Z7-qeb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzn-mp-w0x">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <color key="backgroundColor" red="0.0" green="0.62745098039215685" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="v5q-2j-j3B"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="选择该教练"/>
+                    <connections>
+                        <action selector="chooseTeacherActive:" destination="-1" eventType="touchUpInside" id="5GZ-Zs-1mZ"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GFo-gj-fLg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="pzn-mp-w0x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Uu-PD-49b"/>
+                <constraint firstItem="GFo-gj-fLg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RH2-r7-eCh"/>
+                <constraint firstAttribute="bottom" secondItem="pzn-mp-w0x" secondAttribute="bottom" id="ZzI-q2-Od5"/>
+                <constraint firstItem="pzn-mp-w0x" firstAttribute="top" secondItem="GFo-gj-fLg" secondAttribute="bottom" id="kVA-kA-r9p"/>
+                <constraint firstAttribute="trailing" secondItem="pzn-mp-w0x" secondAttribute="trailing" id="t4Q-wa-Uqt"/>
+                <constraint firstItem="GFo-gj-fLg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xbp-d3-bWv"/>
+                <constraint firstAttribute="trailing" secondItem="GFo-gj-fLg" secondAttribute="trailing" id="zHM-ao-fcg"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
